@@ -1,8 +1,8 @@
 streamlit>=1.30.0
-opencv-python-headless>=4.8.0,<4.12
-numpy>=1.24.0,<2.2
-Pillow>=10.0.0,<11.2
-ultralytics>=8.1.0,<8.4
-torch>=2.1.0,<2.6
-tqdm>=4.66.0,<4.67
-pytest>=7.4.0,<8.3
+opencv-python-headless>=4.8.0
+numpy>=1.24.0,<2.0
+Pillow>=10.0.0
+ultralytics>=8.1.0
+torch>=2.1.0
+tqdm>=4.66.0
+pytest>=7.4.0
