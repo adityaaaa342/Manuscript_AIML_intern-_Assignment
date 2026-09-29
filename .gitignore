@@ -24,9 +24,6 @@ Thumbs.db
 *.engine
 weights/
 
-# Results (regenerated)
-results/
-
 # Distribution
 dist/
 build/

@@ -1,0 +1,229 @@
+{
+  "total_images": 2,
+  "results": [
+    {
+      "image": "Sample_img_02.png",
+      "width": 1086,
+      "height": 421,
+      "regions": [
+        {
+          "label": "header",
+          "bbox": [
+            108.0,
+            5.0,
+            1059.0,
+            50.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            115.0,
+            370.0,
+            1057.0,
+            418.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            72.0,
+            54.0,
+            1075.0,
+            95.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            72.0,
+            95.0,
+            1075.0,
+            123.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            72.0,
+            123.0,
+            1075.0,
+            173.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            72.0,
+            173.0,
+            1075.0,
+            220.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            72.0,
+            220.0,
+            1075.0,
+            260.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            72.0,
+            260.0,
+            1075.0,
+            301.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            72.0,
+            301.0,
+            1075.0,
+            338.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            72.0,
+            338.0,
+            1075.0,
+            366.0
+          ],
+          "confidence": 0.98
+        }
+      ]
+    },
+    {
+      "image": "Sample_img_1.png",
+      "width": 1161,
+      "height": 469,
+      "regions": [
+        {
+          "label": "header",
+          "bbox": [
+            4.0,
+            4.0,
+            1158.0,
+            48.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            2.0,
+            398.0,
+            1161.0,
+            469.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            92.0,
+            58.0,
+            999.0,
+            91.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            92.0,
+            91.0,
+            999.0,
+            122.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            92.0,
+            122.0,
+            999.0,
+            156.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            92.0,
+            156.0,
+            999.0,
+            194.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            92.0,
+            194.0,
+            999.0,
+            226.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            92.0,
+            226.0,
+            999.0,
+            266.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            92.0,
+            266.0,
+            999.0,
+            298.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            92.0,
+            298.0,
+            999.0,
+            336.0
+          ],
+          "confidence": 0.98
+        },
+        {
+          "label": "main_text",
+          "bbox": [
+            92.0,
+            336.0,
+            999.0,
+            387.0
+          ],
+          "confidence": 0.98
+        }
+      ]
+    }
+  ]
+}

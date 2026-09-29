@@ -1,0 +1,107 @@
+{
+  "image": "Sample_img_02.png",
+  "width": 1086,
+  "height": 421,
+  "regions": [
+    {
+      "label": "header",
+      "bbox": [
+        108.0,
+        5.0,
+        1059.0,
+        50.0
+      ],
+      "confidence": 0.98
+    },
+    {
+      "label": "footer",
+      "bbox": [
+        115.0,
+        370.0,
+        1057.0,
+        418.0
+      ],
+      "confidence": 0.98
+    },
+    {
+      "label": "main_text",
+      "bbox": [
+        72.0,
+        54.0,
+        1075.0,
+        95.0
+      ],
+      "confidence": 0.98
+    },
+    {
+      "label": "main_text",
+      "bbox": [
+        72.0,
+        95.0,
+        1075.0,
+        123.0
+      ],
+      "confidence": 0.98
+    },
+    {
+      "label": "main_text",
+      "bbox": [
+        72.0,
+        123.0,
+        1075.0,
+        173.0
+      ],
+      "confidence": 0.98
+    },
+    {
+      "label": "main_text",
+      "bbox": [
+        72.0,
+        173.0,
+        1075.0,
+        220.0
+      ],
+      "confidence": 0.98
+    },
+    {
+      "label": "main_text",
+      "bbox": [
+        72.0,
+        220.0,
+        1075.0,
+        260.0
+      ],
+      "confidence": 0.98
+    },
+    {
+      "label": "main_text",
+      "bbox": [
+        72.0,
+        260.0,
+        1075.0,
+        301.0
+      ],
+      "confidence": 0.98
+    },
+    {
+      "label": "main_text",
+      "bbox": [
+        72.0,
+        301.0,
+        1075.0,
+        338.0
+      ],
+      "confidence": 0.98
+    },
+    {
+      "label": "main_text",
+      "bbox": [
+        72.0,
+        338.0,
+        1075.0,
+        366.0
+      ],
+      "confidence": 0.98
+    }
+  ]
+}
