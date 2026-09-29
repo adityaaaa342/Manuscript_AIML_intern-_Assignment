@@ -2,7 +2,7 @@
 
 > **Automated layout analysis and region classification for historical Indic manuscripts (palm-leaf, birch bark, and paper folios) using Classical Computer Vision and Deep Learning.**
 
-[![Live App](https://img.shields.io/badge/🌐_Live_Demo-Render_Web_Service-brightgreen.svg)](#-live-demo)
+[![Live App](https://img.shields.io/badge/🌐_Live_Demo-Hosted_Web_Service-brightgreen.svg)](#-approach-1-run-online-hosted-web-app-recommended)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B.svg)](https://streamlit.io/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8.svg)](https://opencv.org/)
@@ -10,24 +10,59 @@
 
 ---
 
-## 🌐 Live Demo
+## 🎯 How to Run the Application (Choose One)
 
-You can try the interactive manuscript detection Web UI directly in your browser without installing anything locally:
+You can run and test this project using either of the two approaches below:
 
-👉 **[Launch Live Web App on Render](https://manuscript-layout-detector.onrender.com)** *(Replace with your Render deployment URL)*
+### 🟢 Approach 1: Run Online via Hosted Web App (Recommended)
+**No installation, setup, or coding required.** Test the model directly in your web browser:
+
+👉 **[Launch Live Manuscript Detector Web App](https://manuscript-layout-detector.onrender.com)** *(Click to open the hosted application)*
+
+1. Open the hosted URL in any browser (desktop or mobile).
+2. Drag and drop manuscript scans (`.jpg`, `.png`, `.tiff`, `.bmp`).
+3. View real-time visual bounding boxes, confidence scores, and structured JSON results.
+4. Download annotated images or batch JSON results with one click.
 
 ---
 
-## 📌 Table of Contents
-- [Live Demo](#-live-demo)
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [Target Classes](#-target-classes)
-- [How to Run Locally](#-how-to-run-locally-optional)
-- [CLI Batch Inference](#-cli-batch-inference)
-- [Project Structure](#-project-structure)
-- [Testing & Validation](#-testing--validation)
-- [Deploying on Render](#-deploying-on-render)
+### 💻 Approach 2: Run Manually on Your Local Machine
+
+If you are a developer and want to run, modify, or test the code offline:
+
+#### 1. Clone the Repository
+```bash
+git clone https://github.com/adityaaaa342/Manuscript_AIML_intern-_Assignment.git
+cd Manuscript_AIML_intern-_Assignment
+```
+
+#### 2. Create and Activate a Virtual Environment
+- **On Windows (PowerShell):**
+  ```powershell
+  python -m venv venv
+  .\venv\Scripts\Activate.ps1
+  ```
+- **On Linux / macOS:**
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
+
+#### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+#### 4. Launch the Interactive Web UI Locally
+```bash
+streamlit run app.py
+```
+Open `http://localhost:8501` in your browser.
+
+#### 5. Or Run Batch Processing from the Command Line (CLI)
+```bash
+python inference.py --input ./data/test_images --output ./results
+```
 
 ---
 
@@ -64,57 +99,6 @@ This system automatically detects, segments, and classifies layout regions acros
 | `footer` | 🟦 Blue | Signatures, catchwords, bottom margin metadata, page numbers |
 | `side_text` | 🟪 Magenta | Marginalia, scribe commentary, notes along left/right margins |
 | `filler` | 🟥 Salmon | Digital library stamps (e.g. eGangotri/Sringeri banners), watermarks, non-target script |
-
----
-
-## 💻 How to Run Locally (Optional)
-
-Running locally is completely optional. If you want to develop or test offline on your own computer:
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/adityaaaa342/Manuscript_AIML_intern-_Assignment.git
-cd Manuscript_AIML_intern-_Assignment
-```
-
-### 2. Create and Activate a Virtual Environment
-- **On Windows (PowerShell):**
-  ```powershell
-  python -m venv venv
-  .\venv\Scripts\Activate.ps1
-  ```
-- **On Linux / macOS:**
-  ```bash
-  python3 -m venv venv
-  source venv/bin/activate
-  ```
-
-### 3. Install Dependencies & Launch
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
-
----
-
-## ⚙️ CLI Batch Inference
-
-Run batch processing directly from the command line:
-
-```bash
-# Process all images in data/test_images and save to results/
-python inference.py --input ./data/test_images --output ./results
-```
-
-### Output Directory Structure
-```
-results/
-├── Sample_img_1_annotated.jpg   # Visual overlay with bounding boxes
-├── Sample_img_1.json            # Bounding box coordinates & classes
-├── Sample_img_02_annotated.jpg
-├── Sample_img_02.json
-└── summary.json                 # Batch execution summary
-```
 
 ---
 
@@ -157,28 +141,8 @@ Run the complete test suite with `pytest`:
 pytest tests/
 ```
 
----
-
-## ☁️ Deploying on Render
-
-To deploy the Web UI live on [Render](https://render.com/):
-
-1. Log in to [Render Dashboard](https://dashboard.render.com/) and click **New +** $\rightarrow$ **Web Service**.
-2. Connect your GitHub repository.
-3. Configure the service settings:
-   - **Environment**: `Python 3`
-   - **Build Command**:
-     ```bash
-     pip install -r requirements.txt
-     ```
-   - **Start Command**:
-     ```bash
-     streamlit run app.py --server.port $PORT --server.address 0.0.0.0 --server.enableCORS false --server.enableXsrfProtection false
-     ```
-   - **Plan**: `Free`
-4. Click **Deploy Web Service**. Render will provide your public live URL.
-
----
-
-## 📄 License
-This project is open-source and available under the MIT License.
+**Test Coverage Highlights:**
+- Schema compliance against expected layout JSON specification.
+- Handling of corrupted, empty, or unreadable image files.
+- Coordinate clipping and Non-Maximum Suppression (NMS).
+- Batch folder discovery and summary generation.
