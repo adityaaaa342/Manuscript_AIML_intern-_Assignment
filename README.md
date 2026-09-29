@@ -106,29 +106,21 @@ This system automatically detects, segments, and classifies layout regions acros
 
 ```
 manuscript-layout/
-├── app.py                     # Streamlit Web UI Application
-├── inference.py               # CLI entry point for batch inference
-├── train.py                   # YOLO fine-tuning pipeline
-├── requirements.txt           # Python dependencies
-├── README.md                  # Project documentation
-├── data/
-│   └── test_images/           # Sample manuscript scans
-├── results/                   # Output folder for JSON & annotated images
-├── src/
-│   ├── __init__.py
-│   ├── config.py              # Class names, colors, thresholds
-│   ├── detector.py            # Classical line-level detector & YOLO wrapper
-│   ├── classifier.py          # Spatial & heuristic classification rules
-│   ├── preprocess.py          # Illumination normalization & deskewing
-│   ├── postprocess.py         # NMS, clipping, small box filtering
-│   ├── visualize.py           # Bounding box rendering utilities
-│   └── io_utils.py            # Safe image loading and JSON serialization
-└── tests/
-    ├── conftest.py            # Test fixtures & synthetic image generators
-    ├── test_batch.py          # Batch processing tests
-    ├── test_corrupt.py        # Corrupted/invalid image tests
-    ├── test_postprocess.py    # Box clipping & NMS validation
-    └── test_schema.py         # JSON schema compliance tests
+├── 🌐 app.py                 # Interactive Web UI (Streamlit)
+├── ⚡ inference.py           # Run detection on multiple images (CLI)
+├── 🧠 train.py               # Model training pipeline (YOLO)
+│
+├── 📁 src/                   # Core Detection Pipeline
+│   ├── detector.py           # Detects text lines & layout regions
+│   ├── preprocess.py         # Cleans scans & normalizes lighting
+│   ├── postprocess.py        # Refines & filters bounding boxes
+│   ├── visualize.py          # Draws color-coded boxes on images
+│   ├── config.py             # Target classes, colors, and settings
+│   └── io_utils.py           # Image loader & JSON file exporter
+│
+├── 📁 data/test_images/      # Input folder for manuscript scans
+├── 📁 results/               # Output folder for JSON & annotated images
+└── 📁 tests/                 # Automated test suite (23 unit tests)
 ```
 
 ---
