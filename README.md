@@ -2,7 +2,7 @@
 
 > **Automated layout analysis and region classification for historical Indic manuscripts (palm-leaf, birch bark, and paper folios) using Classical Computer Vision and Deep Learning.**
 
-[![Live App](https://img.shields.io/badge/🌐_Live_Demo-Hosted_Web_Service-brightgreen.svg)](#-approach-1-run-online-hosted-web-app-recommended)
+[![Live App](https://img.shields.io/badge/🌐_Live_Demo-Hosted_Web_Service-brightgreen.svg)](https://manuscript-aiml-intern-assignment.onrender.com)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B.svg)](https://streamlit.io/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8.svg)](https://opencv.org/)
@@ -17,7 +17,7 @@ You can run and test this project using either of the two approaches below:
 ### 🟢 Approach 1: Run Online via Hosted Web App (Recommended)
 **No installation, setup, or coding required.** Test the model directly in your web browser:
 
-👉 **[Launch Live Manuscript Detector Web App](https://manuscript-layout-detector.onrender.com)** *(Click to open the hosted application)*
+👉 **[Launch Live Manuscript Detector Web App](https://manuscript-aiml-intern-assignment.onrender.com)**
 
 1. Open the hosted URL in any browser (desktop or mobile).
 2. Drag and drop manuscript scans (`.jpg`, `.png`, `.tiff`, `.bmp`).
